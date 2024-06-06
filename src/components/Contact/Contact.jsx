@@ -10,10 +10,10 @@ const Contact = ({ id, name, number }) => {
   };
 
   return (
-    <div className={css.contact}>
-      <p className={`${css.text} ${css.name}`}>{name}</p>
-      <p className={`${css.text} ${css.number}`}>{number}</p>
-      <button className={css.btn} onClick={handleDelete}>
+    <div className={css.contactContainer}>
+      <p className={`${css.textItem} ${css.nameIcon}`}>{name}</p>
+      <p className={`${css.textItem} ${css.numberIcon}`}>{number}</p>
+      <button className={css.deleteBtn} onClick={handleDelete}>
         Delete
       </button>
     </div>
